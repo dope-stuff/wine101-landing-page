@@ -16,7 +16,7 @@ export default function LandingPage() {
           className="rounded-[50%]"
           width={100}
           height={100}
-          src="/wine101-landing-page/images/landing/logo.webp"
+          src="/wine101-landing-page/images/logo.webp"
           alt=""
         />
         <div className="flex flex-col gap-2 mt-2">
