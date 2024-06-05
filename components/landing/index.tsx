@@ -10,13 +10,13 @@ export default function LandingPage() {
     window.open(`https://${url}`, "_blank");
   };
   return (
-    <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/images/landing/background.webp')]">
+    <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('images/landing/background.webp')]">
       <div className="w-screen h-screen flex flex-col justify-center items-center font-montserrat text-center">
         <Image
           className="rounded-[50%]"
           width={100}
           height={100}
-          src="/images/landing/logo.webp"
+          src="images/landing/logo.webp"
           alt=""
         />
         <div className="flex flex-col gap-2 mt-2">
@@ -30,7 +30,7 @@ export default function LandingPage() {
             <Image
               width={36}
               height={36}
-              src="/images/icons/instagram.webp"
+              src="images/icons/instagram.webp"
               className="rounded-lg"
               alt=""
             />
@@ -41,7 +41,7 @@ export default function LandingPage() {
             <Image
               width={36}
               height={36}
-              src="/images/icons/line.webp"
+              src="images/icons/line.webp"
               className="rounded-lg"
               alt=""
             />
@@ -49,14 +49,14 @@ export default function LandingPage() {
             <div className="w-[36px]" />
           </CustomButton>
           <CustomButton onClick={() => onNewTab("wine101.wine")}>
-            <Image width={36} height={36} src="/images/logo.webp" alt="" />
+            <Image width={36} height={36} src="images/logo.webp" alt="" />
             <div className="w-full">
               Website (Order online: 50+ wines await your selection)
             </div>
             <Image
               width={36}
               height={36}
-              src="/images/icons/sale.webp"
+              src="images/icons/sale.webp"
               className="rounded-lg"
               alt=""
             />
