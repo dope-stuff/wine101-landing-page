@@ -5,9 +5,6 @@ export default function LandingPage() {
   const description =
     "not entirely sure about wine but i guess we're figuring out together!";
 
-  const onNewTab = (url: string) => {
-    window.open(`https://${url}`, "_blank");
-  };
   return (
     <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/wine101-landing-page/images/landing/background.webp')]">
       <div className="w-screen h-screen flex flex-col justify-center items-center font-montserrat text-center">
