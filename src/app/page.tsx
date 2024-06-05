@@ -6,7 +6,7 @@ export default function Home() {
       <link
         rel="shortcut icon"
         type="image/x-icon"
-        href="logo.ico"
+        href="favicon.ico"
       />
       <LandingPage />
     </main>
