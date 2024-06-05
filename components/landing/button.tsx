@@ -1,21 +1,24 @@
+import Link from "next/link";
 import React from "react";
 
 interface CustomButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   className?: string;
-  onClick: (value: any) => void;
+  // onClick: (value: any) => void;
+  href: string;
 }
 export default function CustomButton({
   children,
-  onClick,
+  // onClick,
+  href,
   ...attributes
 }: CustomButtonProps) {
   return (
-    <button
+    <Link
       className="h-full flex-row flex flex-nowrap min-w-[100px] max-h-[48px] min-h-[48px] gap-10 justify-center items-center bg-white py-2 px-4 relative font-medium rounded-xl border-2 border-[#333333] text-[14px]"
-      onClick={onClick}
-      {...attributes}
+      href={href}
+      target="_blank"
     >
       {children}
-    </button>
+    </Link>
   );
 }

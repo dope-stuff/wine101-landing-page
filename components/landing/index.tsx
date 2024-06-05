@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import CustomButton from "./button";
 
@@ -26,7 +25,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="flex-col flex gap-4 my-8">
-          <CustomButton onClick={() => onNewTab("www.instagram.com/w.ine101")}>
+          <CustomButton href="https://www.instagram.com/w.ine101">
             <Image
               width={36}
               height={36}
@@ -37,7 +36,7 @@ export default function LandingPage() {
             <div className="w-full">Instagram</div>
             <div className="w-[36px]" />
           </CustomButton>
-          <CustomButton onClick={() => onNewTab("lin.ee/TATP6C2")}>
+          <CustomButton href="https://line.me/R/ti/p/@839lfzqn?oat_content=url">
             <Image
               width={36}
               height={36}
@@ -48,8 +47,13 @@ export default function LandingPage() {
             <div className="w-full">LINE</div>
             <div className="w-[36px]" />
           </CustomButton>
-          <CustomButton onClick={() => onNewTab("wine101.wine")}>
-            <Image width={36} height={36} src="/wine101-landing-page/images/logo.webp" alt="" />
+          <CustomButton href="https://wine101.wine/">
+            <Image
+              width={36}
+              height={36}
+              src="/wine101-landing-page/images/logo.webp"
+              alt=""
+            />
             <div className="w-full">
               Website (Order online: 50+ wines await your selection)
             </div>
